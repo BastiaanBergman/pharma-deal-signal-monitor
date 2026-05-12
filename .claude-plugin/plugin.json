@@ -1,0 +1,27 @@
+{
+  "name": "pharma-deal-signal-monitor",
+  "version": "1.0.0",
+  "description": "Scans recent pharmaceutical press releases for pre-partnering and M&A signals. Detects positive clinical readouts, collaboration terminations, BD leadership hires, regulatory milestones, and explicit out-licensing language — then synthesises findings into a prioritised deal signal report. Powered by the Pharmaceutic Index real-time press release corpus. Free 7-day coverage requires no account.",
+  "author": "Pharmaceutic Index",
+  "homepage": "https://pharmaceuticindex.com",
+  "repository": "https://github.com/BastiaanBergman/pharma-deal-signal-monitor",
+  "keywords": [
+    "pharma",
+    "biotech",
+    "business-development",
+    "licensing",
+    "deal-signals",
+    "press-releases",
+    "competitive-intelligence",
+    "life-sciences",
+    "M&A",
+    "BD"
+  ],
+  "mcpServers": {
+    "pharmaceutic-index": {
+      "type": "http",
+      "url": "https://api.pharmaceuticindex.com/mcp",
+      "description": "Pharmaceutic Index press release search API. Provides semantic search over recent pharmaceutical press releases. Free tier returns 7-day results without authentication. Authenticated paid accounts unlock 30-day coverage."
+    }
+  }
+}
