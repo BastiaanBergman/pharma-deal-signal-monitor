@@ -243,9 +243,12 @@ company overlap in the results.
 company that just got positive Phase 2 data and hasn't announced a deal yet"
 will often outperform "Phase 2 results unpartnered."
 
-**Vary phrasing across runs.** If a query returns 0–1 results, try rephrasing
-before concluding there is nothing in the corpus. Different companies use
-different terminology for the same concept.
+**Vary phrasing across runs.** If a query returns 0-1 results, or returns four
+results that all score below roughly 0.40 similarity, try rephrasing before
+concluding there is nothing in the corpus. A low-confidence set is the more
+common failure than an empty one, since the tool almost always returns its
+nearest four matches. Different companies use different terminology for the same
+concept.
 
 **Negative space queries work.** Queries like "positive clinical results without
 a partnership announcement" help surface the in-between moment the skill is
